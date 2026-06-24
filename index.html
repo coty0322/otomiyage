@@ -401,7 +401,7 @@ async function doSearch(){
   document.getElementById('results').innerHTML='<div class="rload"><div class="spin"></div><span>トレンドを検索中…</span></div>';
   try{
     const apiKey=localStorage.getItem('otomiyage_apikey')||'';
-    const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1200,tools:[{type:'web_search_20250305',name:'web_search'}],messages:[{role:'user',content:prompt}]})});
+    const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01','anthropic-beta':'web-search-2025-03-05','anthropic-dangerous-direct-browser-access':'true'},body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1200,tools:[{type:'web_search_20250305',name:'web_search'}],messages:[{role:'user',content:prompt}]})});
     const data=await res.json();
     let txt='';for(const b of data.content){if(b.type==='text'){txt=b.text;break;}}
     let gifts=[];try{const m=txt.replace(/```json|```/g,'').trim().match(/\[[\s\S]*\]/);if(m)gifts=JSON.parse(m[0]);}catch(e){}
