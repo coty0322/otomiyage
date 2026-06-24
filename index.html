@@ -68,7 +68,7 @@ textarea{height:56px;resize:none;}
 .rcd{font-size:12px;color:var(--text2);line-height:1.6;margin-bottom:8px;}
 .rcw{font-size:11px;color:var(--gold-d);background:var(--gold-l);border-radius:var(--r-md);padding:6px 8px;margin-bottom:10px;line-height:1.5;}
 .rcb{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
-.mb{padding:7px;font-size:12px;cursor:pointer;background:var(--bg2);color:var(--text2);border:0.5px solid var(--border);border-radius:var(--r-md);font-family:inherit;font-weight:500;display:flex;align-items:center;justify-content:center;gap:4px;transition:border-color .12s;}
+.mb{padding:7px;font-size:12px;cursor:pointer;background:var(--bg2);color:var(--text2);border:0.5px solid var(--border);border-radius:var(--r-md);font-family:inherit;font-weight:500;display:flex;align-items:center;justify-content:center;gap:4px;}
 .mb:hover{border-color:var(--border2);}
 .sl{padding:7px;font-size:12px;cursor:pointer;background:var(--gold-l);color:var(--gold-d);border:0.5px solid var(--gold-m);border-radius:var(--r-md);font-family:inherit;display:flex;align-items:center;justify-content:center;gap:4px;text-decoration:none;}
 .sl:hover{background:var(--gold-m);}
@@ -85,7 +85,7 @@ textarea{height:56px;resize:none;}
 .cb{display:none;margin-top:1rem;}.cb.open{display:block;}
 .fr{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;}
 .fw{margin-bottom:8px;}
-.sub{width:100%;padding:10px;font-size:13px;font-weight:600;cursor:pointer;background:var(--gold);color:#fff;border:none;border-radius:var(--r-md);font-family:inherit;margin-top:4px;transition:background .15s;}
+.sub{width:100%;padding:10px;font-size:13px;font-weight:600;cursor:pointer;background:var(--gold);color:#fff;border:none;border-radius:var(--r-md);font-family:inherit;margin-top:4px;}
 .sub:hover{background:var(--gold-d);}
 .sub.blue{background:var(--blue);}.sub.blue:hover{background:#0c447c;}
 .hf{display:flex;gap:8px;margin-bottom:1rem;}
@@ -105,20 +105,17 @@ textarea{height:56px;resize:none;}
 .hprice{font-size:12px;color:#27500A;background:#EAF3DE;padding:1px 7px;border-radius:20px;display:inline-block;margin-top:2px;}
 .hm{font-size:12px;color:var(--text2);border-left:2px solid var(--border2);padding-left:8px;margin-top:5px;line-height:1.6;}
 .favlist{display:flex;flex-direction:column;gap:8px;}
-.favc{background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-lg);padding:1rem 1.25rem;display:flex;gap:12px;align-items:center;transition:border-color .12s;}
-.favc:hover{border-color:var(--border2);}
+.favc{background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-lg);padding:1rem 1.25rem;display:flex;gap:12px;align-items:center;}
 .favi{width:38px;height:38px;border-radius:var(--r-md);background:var(--gold-l);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:19px;flex-shrink:0;}
 .favinfo{flex:1;min-width:0;}
 .favname{font-size:14px;font-weight:600;margin-bottom:2px;}
 .favshop{font-size:12px;color:var(--text2);}
 .favact{display:flex;gap:6px;align-items:center;flex-shrink:0;}
 .favsrch{padding:5px 10px;font-size:12px;background:var(--gold-l);color:var(--gold-d);border:0.5px solid var(--gold-m);border-radius:var(--r-md);cursor:pointer;font-family:inherit;text-decoration:none;display:flex;align-items:center;gap:4px;}
-.favsrch:hover{background:var(--gold-m);}
-.favdel{background:none;border:none;cursor:pointer;color:var(--text2);opacity:.35;font-size:16px;transition:opacity .15s;}
+.favdel{background:none;border:none;cursor:pointer;color:var(--text2);opacity:.35;font-size:16px;}
 .favdel:hover{opacity:1;color:#E24B4A;}
 .nexts{display:flex;flex-direction:column;gap:8px;}
-.nc{background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-lg);padding:1rem 1.25rem;display:flex;gap:12px;align-items:center;transition:border-color .12s;}
-.nc:hover{border-color:var(--border2);}
+.nc{background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-lg);padding:1rem 1.25rem;display:flex;gap:12px;align-items:center;}
 .nci{width:40px;height:40px;border-radius:50%;background:var(--green-l);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--green);flex-shrink:0;}
 .ncinfo{flex:1;min-width:0;}
 .ncperson{font-size:14px;font-weight:600;margin-bottom:2px;}
@@ -126,15 +123,16 @@ textarea{height:56px;resize:none;}
 .ncact{display:flex;gap:6px;align-items:center;flex-shrink:0;}
 .ncdone{padding:6px 12px;font-size:12px;background:var(--green-l);color:var(--green);border:0.5px solid var(--green-m);border-radius:var(--r-md);cursor:pointer;font-family:inherit;font-weight:500;}
 .ncdone:hover{background:var(--green-m);color:#fff;}
-.ncdel{background:none;border:none;cursor:pointer;color:var(--text2);opacity:.35;font-size:16px;transition:opacity .15s;}
+.ncdel{background:none;border:none;cursor:pointer;color:var(--text2);opacity:.35;font-size:16px;}
 .ncdel:hover{opacity:1;color:#E24B4A;}
 .anr{display:flex;gap:8px;margin-top:1rem;flex-wrap:wrap;}
 .anr input{flex:1;min-width:120px;}
 .anb{padding:8px 16px;font-size:12px;background:var(--gold);color:#fff;border:none;border-radius:var(--r-md);cursor:pointer;font-family:inherit;font-weight:500;white-space:nowrap;}
-.anb:hover{background:var(--gold-d);}
+
+/* popup */
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,0.45);display:flex;align-items:center;justify-content:center;z-index:1000;padding:1rem;}
 .overlay.hide{display:none;}
-.popup{background:var(--bg);border-radius:16px;width:100%;max-width:460px;max-height:85vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.2);}
+.popup{background:var(--bg);border-radius:16px;width:100%;max-width:460px;max-height:88vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.2);}
 .popup-head{padding:1.25rem 1.25rem 0;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;}
 .popup-title{font-size:16px;font-weight:600;line-height:1.4;flex:1;}
 .popup-close{background:none;border:none;cursor:pointer;color:var(--text2);font-size:20px;padding:0;flex-shrink:0;opacity:.6;}
@@ -144,16 +142,32 @@ textarea{height:56px;resize:none;}
 .popup-label{font-size:11px;color:var(--text2);width:60px;flex-shrink:0;padding-top:1px;}
 .popup-val{flex:1;color:var(--text);line-height:1.6;}
 .popup-val a{color:var(--gold);word-break:break-all;}
-.popup-divider{height:0.5px;background:var(--border);margin:10px 0;}
+.popup-divider{height:0.5px;background:var(--border);margin:12px 0;}
 .popup-tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:20px;margin-right:4px;margin-bottom:8px;}
 .popup-tag.given{background:var(--gold-l);color:var(--gold-d);border:0.5px solid var(--gold);}
 .popup-tag.recv{background:var(--blue-l);color:var(--blue);border:0.5px solid #91C4F0;}
+.popup-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:4px;}
+.popup-edit-btn{padding:9px;font-size:13px;font-weight:600;cursor:pointer;background:var(--gold);color:#fff;border:none;border-radius:var(--r-md);font-family:inherit;}
+.popup-edit-btn:hover{background:var(--gold-d);}
+.popup-del-btn{padding:9px;font-size:13px;cursor:pointer;background:transparent;color:#E24B4A;border:0.5px solid #E24B4A;border-radius:var(--r-md);font-family:inherit;}
+.popup-del-btn:hover{background:#FEF0F0;}
+
+/* edit form inside popup */
+.edit-form{display:none;}
+.edit-form.open{display:block;}
+.edit-form .fr{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;}
+.edit-form .fw{margin-bottom:8px;}
+.edit-form .fw input,.edit-form .fw textarea{width:100%;font-size:13px;}
+.edit-form .fw textarea{height:56px;resize:none;padding:8px 10px;font-family:inherit;border:0.5px solid var(--border);border-radius:var(--r-md);background:var(--bg2);color:var(--text);}
+.edit-save{width:100%;padding:10px;font-size:13px;font-weight:600;cursor:pointer;background:var(--gold);color:#fff;border:none;border-radius:var(--r-md);font-family:inherit;margin-top:4px;}
+.edit-save:hover{background:var(--gold-d);}
+
+/* api */
 .api-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:9999;}
 .api-modal{background:var(--bg);border-radius:16px;padding:2rem;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.2);}
 .api-modal h2{font-size:16px;font-weight:600;margin-bottom:6px;}
 .api-modal p{font-size:13px;color:var(--text2);margin-bottom:1.25rem;line-height:1.7;}
 .api-modal-btn{width:100%;padding:11px;font-size:14px;font-weight:600;cursor:pointer;background:var(--gold);color:#fff;border:none;border-radius:var(--r-md);font-family:inherit;}
-.api-modal-btn:hover{background:var(--gold-d);}
 .api-note{font-size:11px;color:var(--text2);margin-top:8px;text-align:center;}
 .api-note a{color:var(--gold);}
 </style>
@@ -252,13 +266,18 @@ textarea{height:56px;resize:none;}
 </div>
 </div>
 
+<!-- popup -->
 <div class="overlay hide" id="popup-overlay" onclick="closePopup(event)">
   <div class="popup" id="popup-box">
-    <div class="popup-head"><div class="popup-title" id="popup-title"></div><button class="popup-close" onclick="closePopupDirect()"><i class="ti ti-x"></i></button></div>
+    <div class="popup-head">
+      <div class="popup-title" id="popup-title"></div>
+      <button class="popup-close" onclick="closePopupDirect()"><i class="ti ti-x"></i></button>
+    </div>
     <div class="popup-body" id="popup-body"></div>
   </div>
 </div>
 
+<!-- api key -->
 <div class="api-overlay" id="api-overlay" style="display:none;">
   <div class="api-modal">
     <h2>🔑 APIキーを設定してください</h2>
@@ -286,29 +305,71 @@ function saveApiKey(){
   localStorage.setItem('otomiyage_apikey',v);document.getElementById('api-overlay').style.display='none';
 }
 
+// --- popup ---
+let _popupType='',_popupId=0;
 function openPopup(type,id){
+  _popupType=type;_popupId=id;
   const r=ld(type==='g'?GK:RK).find(x=>x.id===id);if(!r)return;
   const isG=type==='g';
   document.getElementById('popup-title').textContent=r.item;
   document.getElementById('popup-body').innerHTML=`
     <span class="popup-tag ${isG?'given':'recv'}">${isG?'🎁 贈った':'📥 もらった'}</span>
     <div class="popup-divider"></div>
-    ${r.person||r.company?`<div class="popup-row"><span class="popup-label">${isG?'相手':'贈り主'}</span><span class="popup-val">${r.person||''}${r.company?` <span style="font-size:11px;color:#888;">(${r.company})</span>`:''}</span></div>`:''}
-    ${r.date?`<div class="popup-row"><span class="popup-label">日付</span><span class="popup-val">${r.date}</span></div>`:''}
-    ${r.price?`<div class="popup-row"><span class="popup-label">金額</span><span class="popup-val" style="color:#27500A;font-weight:600;">${r.price}</span></div>`:''}
-    ${r.url?`<div class="popup-row"><span class="popup-label">URL</span><span class="popup-val"><a href="${r.url}" target="_blank" rel="noopener">${r.url}</a></span></div>`:''}
-    ${r.memo?`<div class="popup-divider"></div><div class="popup-row"><span class="popup-label">メモ</span><span class="popup-val">${r.memo}</span></div>`:''}
+    <div id="popup-detail">
+      ${r.person||r.company?`<div class="popup-row"><span class="popup-label">${isG?'相手':'贈り主'}</span><span class="popup-val">${r.person||''}${r.company?` <span style="font-size:11px;color:#888;">(${r.company})</span>`:''}</span></div>`:''}
+      ${r.date?`<div class="popup-row"><span class="popup-label">日付</span><span class="popup-val">${r.date}</span></div>`:''}
+      ${r.price?`<div class="popup-row"><span class="popup-label">金額</span><span class="popup-val" style="color:#27500A;font-weight:600;">${r.price}</span></div>`:''}
+      ${r.url?`<div class="popup-row"><span class="popup-label">URL</span><span class="popup-val"><a href="${r.url}" target="_blank" rel="noopener">${r.url}</a></span></div>`:''}
+      ${r.memo?`<div class="popup-divider"></div><div class="popup-row"><span class="popup-label">メモ</span><span class="popup-val">${r.memo}</span></div>`:''}
+    </div>
+    <div class="edit-form" id="edit-form">
+      <div class="popup-divider"></div>
+      <div class="fr"><div><div class="fl">会社名</div><input type="text" id="ef-company" value="${r.company||''}" /></div><div><div class="fl">お名前</div><input type="text" id="ef-person" value="${r.person||''}" /></div></div>
+      <div class="fr"><div><div class="fl">日付</div><input type="date" id="ef-date" value="${r.date||''}" /></div><div><div class="fl">金額</div><input type="text" id="ef-price" value="${r.price||''}" placeholder="例: 3,240円" /></div></div>
+      <div class="fw"><div class="fl">品名</div><input type="text" id="ef-item" value="${r.item||''}" /></div>
+      <div class="fw"><div class="fl">URL</div><input type="url" id="ef-url" value="${r.url||''}" placeholder="https://..." /></div>
+      <div class="fw"><div class="fl">メモ</div><textarea id="ef-memo">${r.memo||''}</textarea></div>
+      <button class="edit-save" onclick="saveEdit()"><i class="ti ti-check"></i> 変更を保存</button>
+    </div>
     <div class="popup-divider"></div>
-    <button onclick="delFromPopup('${type}',${id})" style="width:100%;padding:8px;font-size:12px;cursor:pointer;background:transparent;color:#E24B4A;border:0.5px solid #E24B4A;border-radius:8px;font-family:inherit;">この記録を削除する</button>
+    <div class="popup-actions">
+      <button class="popup-edit-btn" id="edit-toggle-btn" onclick="toggleEditForm()"><i class="ti ti-pencil"></i> 編集する</button>
+      <button class="popup-del-btn" onclick="delFromPopup()"><i class="ti ti-trash"></i> 削除する</button>
+    </div>
   `;
   document.getElementById('popup-overlay').classList.remove('hide');
 }
+function toggleEditForm(){
+  const f=document.getElementById('edit-form');
+  const btn=document.getElementById('edit-toggle-btn');
+  const isOpen=f.classList.toggle('open');
+  btn.innerHTML=isOpen?'<i class="ti ti-x"></i> キャンセル':'<i class="ti ti-pencil"></i> 編集する';
+}
+function saveEdit(){
+  const key=_popupType==='g'?GK:RK;
+  const records=ld(key);
+  const idx=records.findIndex(x=>x.id===_popupId);if(idx<0)return;
+  records[idx]={
+    ...records[idx],
+    company:document.getElementById('ef-company').value.trim(),
+    person:document.getElementById('ef-person').value.trim(),
+    date:document.getElementById('ef-date').value,
+    price:document.getElementById('ef-price').value.trim(),
+    item:document.getElementById('ef-item').value.trim(),
+    url:document.getElementById('ef-url').value.trim(),
+    memo:document.getElementById('ef-memo').value.trim(),
+  };
+  sv(key,records);
+  if(_popupType==='g')renderGiven();else renderReceived();
+  closePopupDirect();
+}
 function closePopup(e){if(e.target===document.getElementById('popup-overlay'))closePopupDirect();}
 function closePopupDirect(){document.getElementById('popup-overlay').classList.add('hide');}
-function delFromPopup(type,id){
+function delFromPopup(){
   if(!confirm('削除しますか？'))return;
-  if(type==='g'){sv(GK,ld(GK).filter(r=>r.id!==id));renderGiven();}
-  else{sv(RK,ld(RK).filter(r=>r.id!==id));renderReceived();}
+  const key=_popupType==='g'?GK:RK;
+  sv(key,ld(key).filter(r=>r.id!==_popupId));
+  if(_popupType==='g')renderGiven();else renderReceived();
   closePopupDirect();
 }
 
