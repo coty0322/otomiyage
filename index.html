@@ -8,18 +8,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
-:root{
-  --bg:#fff;--bg2:#f7f6f3;--bg3:#f1efe8;
-  --text:#1a1a1a;--text2:#6b6b6b;
-  --border:rgba(0,0,0,0.12);--border2:rgba(0,0,0,0.22);
-  --gold:#C4956A;--gold-l:#FDF6EE;--gold-m:#E8C99A;--gold-d:#7a5a30;
-  --blue:#185FA5;--blue-l:#E6F1FB;
-  --green:#085041;--green-l:#E1F5EE;--green-m:#5DCAA5;
-  --r-md:8px;--r-lg:12px;--r-xl:16px;
-}
-@media(prefers-color-scheme:dark){
-  :root{--bg:#1e1e1e;--bg2:#2a2a2a;--bg3:#333;--text:#f0f0f0;--text2:#aaa;--border:rgba(255,255,255,0.1);--border2:rgba(255,255,255,0.2);--gold-l:#2a2010;--gold-m:#4a3820;--gold-d:#E8C99A;--blue-l:#0c2240;--green-l:#0a2820;}
-}
+:root{--bg:#fff;--bg2:#f7f6f3;--bg3:#f1efe8;--text:#1a1a1a;--text2:#6b6b6b;--border:rgba(0,0,0,0.12);--border2:rgba(0,0,0,0.22);--gold:#C4956A;--gold-l:#FDF6EE;--gold-m:#E8C99A;--gold-d:#7a5a30;--blue:#185FA5;--blue-l:#E6F1FB;--green:#085041;--green-l:#E1F5EE;--green-m:#5DCAA5;--r-md:8px;--r-lg:12px;--r-xl:16px;}
+@media(prefers-color-scheme:dark){:root{--bg:#1e1e1e;--bg2:#2a2a2a;--bg3:#333;--text:#f0f0f0;--text2:#aaa;--border:rgba(255,255,255,0.1);--border2:rgba(255,255,255,0.2);--gold-l:#2a2010;--gold-m:#4a3820;--gold-d:#E8C99A;--blue-l:#0c2240;--green-l:#0a2820;}}
 body{background:var(--bg3);font-family:-apple-system,BlinkMacSystemFont,'Hiragino Sans','Hiragino Kaku Gothic ProN',sans-serif;color:var(--text);min-height:100vh;}
 .container{max-width:680px;margin:0 auto;padding:1.5rem 1rem 3rem;}
 input,select,textarea{width:100%;padding:9px 11px;border:0.5px solid var(--border);border-radius:var(--r-md);background:var(--bg2);color:var(--text);font-size:13px;font-family:inherit;outline:none;transition:border-color .15s;}
@@ -80,7 +70,7 @@ textarea{height:56px;resize:none;}
 .rcb{display:grid;grid-template-columns:1fr 1fr;gap:6px;}
 .mb{padding:7px;font-size:12px;cursor:pointer;background:var(--bg2);color:var(--text2);border:0.5px solid var(--border);border-radius:var(--r-md);font-family:inherit;font-weight:500;display:flex;align-items:center;justify-content:center;gap:4px;transition:border-color .12s;}
 .mb:hover{border-color:var(--border2);}
-.sl{padding:7px;font-size:12px;cursor:pointer;background:var(--gold-l);color:var(--gold-d);border:0.5px solid var(--gold-m);border-radius:var(--r-md);font-family:inherit;display:flex;align-items:center;justify-content:center;gap:4px;text-decoration:none;transition:background .12s;}
+.sl{padding:7px;font-size:12px;cursor:pointer;background:var(--gold-l);color:var(--gold-d);border:0.5px solid var(--gold-m);border-radius:var(--r-md);font-family:inherit;display:flex;align-items:center;justify-content:center;gap:4px;text-decoration:none;}
 .sl:hover{background:var(--gold-m);}
 .warn{background:#FAEEDA;border:0.5px solid #FAC775;border-radius:var(--r-md);padding:8px 12px;margin-bottom:1rem;font-size:12px;color:#633806;display:flex;align-items:flex-start;gap:8px;line-height:1.6;}
 .sr{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:1.25rem;}
@@ -102,8 +92,8 @@ textarea{height:56px;resize:none;}
 .hf input{flex:1;}
 .hf select{width:120px;}
 .hl{display:flex;flex-direction:column;gap:8px;}
-.hc{background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-lg);padding:1rem 1.25rem;display:flex;gap:12px;transition:border-color .12s;}
-.hc:hover{border-color:var(--border2);}
+.hc{background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-lg);padding:1rem 1.25rem;display:flex;gap:12px;cursor:pointer;transition:border-color .12s;}
+.hc:hover{border-color:var(--gold);}
 .av{width:40px;height:40px;border-radius:50%;background:var(--gold-l);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;color:var(--gold-d);flex-shrink:0;}
 .av.recv{background:var(--blue-l);color:var(--blue);}
 .hi{flex:1;min-width:0;}
@@ -112,9 +102,8 @@ textarea{height:56px;resize:none;}
 .hco{font-size:11px;color:var(--text2);background:var(--bg2);padding:1px 7px;border-radius:20px;border:0.5px solid var(--border);}
 .hd{font-size:11px;color:var(--text2);}
 .hitem{font-size:13px;margin-bottom:3px;display:flex;align-items:center;gap:5px;}
+.hprice{font-size:12px;color:#27500A;background:#EAF3DE;padding:1px 7px;border-radius:20px;display:inline-block;margin-top:2px;}
 .hm{font-size:12px;color:var(--text2);border-left:2px solid var(--border2);padding-left:8px;margin-top:5px;line-height:1.6;}
-.db{background:none;border:none;cursor:pointer;color:var(--text2);opacity:.35;font-size:16px;flex-shrink:0;transition:opacity .15s;}
-.db:hover{opacity:1;color:#E24B4A;}
 .favlist{display:flex;flex-direction:column;gap:8px;}
 .favc{background:var(--bg);border:0.5px solid var(--border);border-radius:var(--r-lg);padding:1rem 1.25rem;display:flex;gap:12px;align-items:center;transition:border-color .12s;}
 .favc:hover{border-color:var(--border2);}
@@ -143,6 +132,22 @@ textarea{height:56px;resize:none;}
 .anr input{flex:1;min-width:120px;}
 .anb{padding:8px 16px;font-size:12px;background:var(--gold);color:#fff;border:none;border-radius:var(--r-md);cursor:pointer;font-family:inherit;font-weight:500;white-space:nowrap;}
 .anb:hover{background:var(--gold-d);}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,0.45);display:flex;align-items:center;justify-content:center;z-index:1000;padding:1rem;}
+.overlay.hide{display:none;}
+.popup{background:var(--bg);border-radius:16px;width:100%;max-width:460px;max-height:85vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.2);}
+.popup-head{padding:1.25rem 1.25rem 0;display:flex;align-items:flex-start;justify-content:space-between;gap:12px;}
+.popup-title{font-size:16px;font-weight:600;line-height:1.4;flex:1;}
+.popup-close{background:none;border:none;cursor:pointer;color:var(--text2);font-size:20px;padding:0;flex-shrink:0;opacity:.6;}
+.popup-close:hover{opacity:1;}
+.popup-body{padding:1rem 1.25rem 1.25rem;}
+.popup-row{display:flex;gap:8px;align-items:flex-start;margin-bottom:10px;font-size:13px;}
+.popup-label{font-size:11px;color:var(--text2);width:60px;flex-shrink:0;padding-top:1px;}
+.popup-val{flex:1;color:var(--text);line-height:1.6;}
+.popup-val a{color:var(--gold);word-break:break-all;}
+.popup-divider{height:0.5px;background:var(--border);margin:10px 0;}
+.popup-tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:20px;margin-right:4px;margin-bottom:8px;}
+.popup-tag.given{background:var(--gold-l);color:var(--gold-d);border:0.5px solid var(--gold);}
+.popup-tag.recv{background:var(--blue-l);color:var(--blue);border:0.5px solid #91C4F0;}
 .api-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:9999;}
 .api-modal{background:var(--bg);border-radius:16px;padding:2rem;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.2);}
 .api-modal h2{font-size:16px;font-weight:600;margin-bottom:6px;}
@@ -162,25 +167,16 @@ textarea{height:56px;resize:none;}
   </div>
   <button class="taste-btn" onclick="toggleTaste()"><i class="ti ti-adjustments-horizontal"></i> 好みを設定</button>
 </div>
-
 <div class="taste-panel" id="taste-panel">
   <div class="tptitle">MY TASTE — あなたの好きなもの</div>
   <div class="taste-tags" id="taste-tags"></div>
-  <div class="atr">
-    <input type="text" id="taste-input" placeholder="例: higashiya、フランス菓子、パッケージがおしゃれ" />
-    <button class="atb" onclick="addTaste()">追加</button>
-  </div>
+  <div class="atr"><input type="text" id="taste-input" placeholder="例: higashiya、フランス菓子、パッケージがおしゃれ" /><button class="atb" onclick="addTaste()">追加</button></div>
 </div>
-
 <div class="sc">
   <div class="ff"><div class="fl">エリア・駅名・ブランド</div><input type="text" id="area" placeholder="例: 渋谷、銀座、東京駅、京都" /></div>
   <div class="fg">
-    <div><div class="fl">予算</div>
-      <select id="budget"><option value="">指定なし</option><option value="〜1,000円">〜1,000円</option><option value="〜2,000円">〜2,000円</option><option value="〜5,000円">〜5,000円</option><option value="5,000円〜">5,000円〜</option></select>
-    </div>
-    <div><div class="fl">ジャンル</div>
-      <select id="genre"><option value="">なんでも</option><option value="和菓子">和菓子</option><option value="洋菓子">洋菓子</option><option value="食事系">食事系</option><option value="飲み物">飲み物</option><option value="雑貨・グッズ">雑貨・グッズ</option></select>
-    </div>
+    <div><div class="fl">予算</div><select id="budget"><option value="">指定なし</option><option value="〜1,000円">〜1,000円</option><option value="〜2,000円">〜2,000円</option><option value="〜5,000円">〜5,000円</option><option value="5,000円〜">5,000円〜</option></select></div>
+    <div><div class="fl">ジャンル</div><select id="genre"><option value="">なんでも</option><option value="和菓子">和菓子</option><option value="洋菓子">洋菓子</option><option value="食事系">食事系</option><option value="飲み物">飲み物</option><option value="雑貨・グッズ">雑貨・グッズ</option></select></div>
   </div>
   <div class="fl">シーン</div>
   <div class="cr">
@@ -193,7 +189,6 @@ textarea{height:56px;resize:none;}
   </div>
   <button class="gb" onclick="doSearch()"><i class="ti ti-sparkles"></i>トレンドを探す</button>
 </div>
-
 <div class="nav">
   <button class="nt on" id="tab-s" onclick="sw('s')"><i class="ti ti-search"></i>結果</button>
   <button class="nt" id="tab-f" onclick="sw('f')"><i class="ti ti-heart"></i>お気に入り<span class="bc" id="fav-cnt">0</span></button>
@@ -201,15 +196,8 @@ textarea{height:56px;resize:none;}
   <button class="nt" id="tab-r" onclick="sw('r')"><i class="ti ti-inbox"></i>もらった</button>
   <button class="nt" id="tab-n" onclick="sw('n')"><i class="ti ti-bookmark"></i>次の候補<span class="bc" id="next-cnt">0</span></button>
 </div>
-
-<div id="panel-s" class="panel on">
-  <div id="results"><div class="empty-state"><i class="ti ti-search"></i><p>条件を入力して<br>トレンドを探してみましょう</p></div></div>
-</div>
-
-<div id="panel-f" class="panel">
-  <div class="favlist" id="favlist"></div>
-</div>
-
+<div id="panel-s" class="panel on"><div id="results"><div class="empty-state"><i class="ti ti-search"></i><p>条件を入力して<br>トレンドを探してみましょう</p></div></div></div>
+<div id="panel-f" class="panel"><div class="favlist" id="favlist"></div></div>
 <div id="panel-g" class="panel">
   <div class="sr">
     <div class="sk"><div class="sn" id="sg-total">0</div><div class="slb">総件数</div></div>
@@ -220,73 +208,55 @@ textarea{height:56px;resize:none;}
   <div class="card">
     <div class="ch" onclick="toggleCard('g')">
       <div style="width:32px;height:32px;border-radius:8px;background:var(--gold-l);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:16px;flex-shrink:0;"><i class="ti ti-plus"></i></div>
-      <h3>新しく記録する</h3>
-      <i class="ti ti-chevron-down chv open" id="chv-g"></i>
+      <h3>新しく記録する</h3><i class="ti ti-chevron-down chv open" id="chv-g"></i>
     </div>
     <div class="cb open" id="cb-g">
-      <div class="fr">
-        <div><div class="fl">会社名</div><input type="text" id="g-company" placeholder="例: LINEヤフー株式会社" /></div>
-        <div><div class="fl">お名前</div><input type="text" id="g-person" placeholder="例: 田中様" oninput="checkDup()" /></div>
-      </div>
-      <div class="fr">
-        <div><div class="fl">日付</div><input type="date" id="g-date" /></div>
-        <div></div>
-      </div>
+      <div class="fr"><div><div class="fl">会社名</div><input type="text" id="g-company" placeholder="例: LINEヤフー株式会社" /></div><div><div class="fl">お名前</div><input type="text" id="g-person" placeholder="例: 田中様" oninput="checkDup()" /></div></div>
+      <div class="fr"><div><div class="fl">日付</div><input type="date" id="g-date" /></div><div><div class="fl">金額</div><input type="text" id="g-price" placeholder="例: 3,240円" /></div></div>
       <div class="fw"><div class="fl">品名</div><input type="text" id="g-item" placeholder="例: higashiya 最中" oninput="checkDup()" /></div>
+      <div class="fw"><div class="fl">URL</div><input type="url" id="g-url" placeholder="例: https://..." /></div>
       <div class="fw"><div class="fl">メモ</div><textarea id="g-memo" placeholder="例: 訪問のお礼に。とても喜んでもらえた。"></textarea></div>
       <button class="sub" onclick="addGiven()"><i class="ti ti-check"></i> 記録を追加</button>
     </div>
   </div>
-  <div class="hf">
-    <input type="text" id="gfs" placeholder="会社名・名前・品名で絞り込む…" oninput="renderGiven()" />
-    <select id="gfsort" onchange="renderGiven()"><option value="new">新しい順</option><option value="old">古い順</option><option value="person">相手名順</option></select>
-  </div>
+  <div class="hf"><input type="text" id="gfs" placeholder="会社名・名前・品名で絞り込む…" oninput="renderGiven()" /><select id="gfsort" onchange="renderGiven()"><option value="new">新しい順</option><option value="old">古い順</option><option value="person">相手名順</option></select></div>
   <div class="hl" id="given-list"></div>
 </div>
-
 <div id="panel-r" class="panel">
   <div class="card">
     <div class="ch" onclick="toggleCard('r')">
       <div style="width:32px;height:32px;border-radius:8px;background:var(--blue-l);display:flex;align-items:center;justify-content:center;color:var(--blue);font-size:16px;flex-shrink:0;"><i class="ti ti-plus"></i></div>
-      <h3>もらったものを記録する</h3>
-      <i class="ti ti-chevron-down chv open" id="chv-r"></i>
+      <h3>もらったものを記録する</h3><i class="ti ti-chevron-down chv open" id="chv-r"></i>
     </div>
     <div class="cb open" id="cb-r">
-      <div class="fr">
-        <div><div class="fl">会社名</div><input type="text" id="r-company" placeholder="例: 株式会社〇〇" /></div>
-        <div><div class="fl">お名前</div><input type="text" id="r-person" placeholder="例: 田中様" /></div>
-      </div>
-      <div class="fr">
-        <div><div class="fl">日付</div><input type="date" id="r-date" /></div>
-        <div></div>
-      </div>
+      <div class="fr"><div><div class="fl">会社名</div><input type="text" id="r-company" placeholder="例: 株式会社〇〇" /></div><div><div class="fl">お名前</div><input type="text" id="r-person" placeholder="例: 田中様" /></div></div>
+      <div class="fr"><div><div class="fl">日付</div><input type="date" id="r-date" /></div><div><div class="fl">金額（参考）</div><input type="text" id="r-price" placeholder="例: 2,000円" /></div></div>
       <div class="fw"><div class="fl">品名</div><input type="text" id="r-item" placeholder="例: マキア・ド・カカオ ピーカンナッツ" /></div>
+      <div class="fw"><div class="fl">URL</div><input type="url" id="r-url" placeholder="例: https://..." /></div>
       <div class="fw"><div class="fl">メモ</div><textarea id="r-memo" placeholder="例: 出張のお土産に。パッケージが素敵だった。"></textarea></div>
       <button class="sub blue" onclick="addReceived()"><i class="ti ti-check"></i> 記録を追加</button>
     </div>
   </div>
-  <div class="hf">
-    <input type="text" id="rfs" placeholder="会社名・名前・品名で絞り込む…" oninput="renderReceived()" />
-    <select id="rfsort" onchange="renderReceived()"><option value="new">新しい順</option><option value="old">古い順</option><option value="person">贈り主順</option></select>
-  </div>
+  <div class="hf"><input type="text" id="rfs" placeholder="会社名・名前・品名で絞り込む…" oninput="renderReceived()" /><select id="rfsort" onchange="renderReceived()"><option value="new">新しい順</option><option value="old">古い順</option><option value="person">贈り主順</option></select></div>
   <div class="hl" id="recv-list"></div>
 </div>
-
 <div id="panel-n" class="panel">
   <div class="card">
     <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
       <div style="width:32px;height:32px;border-radius:8px;background:var(--green-l);display:flex;align-items:center;justify-content:center;color:var(--green);font-size:16px;"><i class="ti ti-bookmark"></i></div>
       <h3 style="font-size:14px;font-weight:600;">次に渡したい候補</h3>
     </div>
-    <div class="anr">
-      <input type="text" id="n-person" placeholder="誰に渡す？（例: 社長）" />
-      <input type="text" id="n-item" placeholder="候補の品名" />
-      <button class="anb" onclick="addNext()">追加</button>
-    </div>
+    <div class="anr"><input type="text" id="n-person" placeholder="誰に渡す？（例: 社長）" /><input type="text" id="n-item" placeholder="候補の品名" /><button class="anb" onclick="addNext()">追加</button></div>
   </div>
   <div class="nexts" id="next-list"></div>
 </div>
+</div>
 
+<div class="overlay hide" id="popup-overlay" onclick="closePopup(event)">
+  <div class="popup" id="popup-box">
+    <div class="popup-head"><div class="popup-title" id="popup-title"></div><button class="popup-close" onclick="closePopupDirect()"><i class="ti ti-x"></i></button></div>
+    <div class="popup-body" id="popup-body"></div>
+  </div>
 </div>
 
 <div class="api-overlay" id="api-overlay" style="display:none;">
@@ -313,17 +283,37 @@ function checkApiKey(){const k=localStorage.getItem('otomiyage_apikey');if(!k)do
 function saveApiKey(){
   const v=document.getElementById('api-key-input').value.trim();
   if(!v||!v.startsWith('sk-')){alert('正しいAPIキーを入力してください（sk-ant-... で始まります）');return;}
-  localStorage.setItem('otomiyage_apikey',v);
-  document.getElementById('api-overlay').style.display='none';
+  localStorage.setItem('otomiyage_apikey',v);document.getElementById('api-overlay').style.display='none';
 }
 
-function renderTaste(){
-  document.getElementById('taste-tags').innerHTML=loadT().map((t,i)=>`<span class="ttag">${t}<button onclick="removeTaste(${i})">✕</button></span>`).join('');
+function openPopup(type,id){
+  const r=ld(type==='g'?GK:RK).find(x=>x.id===id);if(!r)return;
+  const isG=type==='g';
+  document.getElementById('popup-title').textContent=r.item;
+  document.getElementById('popup-body').innerHTML=`
+    <span class="popup-tag ${isG?'given':'recv'}">${isG?'🎁 贈った':'📥 もらった'}</span>
+    <div class="popup-divider"></div>
+    ${r.person||r.company?`<div class="popup-row"><span class="popup-label">${isG?'相手':'贈り主'}</span><span class="popup-val">${r.person||''}${r.company?` <span style="font-size:11px;color:#888;">(${r.company})</span>`:''}</span></div>`:''}
+    ${r.date?`<div class="popup-row"><span class="popup-label">日付</span><span class="popup-val">${r.date}</span></div>`:''}
+    ${r.price?`<div class="popup-row"><span class="popup-label">金額</span><span class="popup-val" style="color:#27500A;font-weight:600;">${r.price}</span></div>`:''}
+    ${r.url?`<div class="popup-row"><span class="popup-label">URL</span><span class="popup-val"><a href="${r.url}" target="_blank" rel="noopener">${r.url}</a></span></div>`:''}
+    ${r.memo?`<div class="popup-divider"></div><div class="popup-row"><span class="popup-label">メモ</span><span class="popup-val">${r.memo}</span></div>`:''}
+    <div class="popup-divider"></div>
+    <button onclick="delFromPopup('${type}',${id})" style="width:100%;padding:8px;font-size:12px;cursor:pointer;background:transparent;color:#E24B4A;border:0.5px solid #E24B4A;border-radius:8px;font-family:inherit;">この記録を削除する</button>
+  `;
+  document.getElementById('popup-overlay').classList.remove('hide');
 }
-function addTaste(){
-  const v=document.getElementById('taste-input').value.trim();if(!v)return;
-  const t=loadT();t.push(v);saveT(t);document.getElementById('taste-input').value='';renderTaste();
+function closePopup(e){if(e.target===document.getElementById('popup-overlay'))closePopupDirect();}
+function closePopupDirect(){document.getElementById('popup-overlay').classList.add('hide');}
+function delFromPopup(type,id){
+  if(!confirm('削除しますか？'))return;
+  if(type==='g'){sv(GK,ld(GK).filter(r=>r.id!==id));renderGiven();}
+  else{sv(RK,ld(RK).filter(r=>r.id!==id));renderReceived();}
+  closePopupDirect();
 }
+
+function renderTaste(){document.getElementById('taste-tags').innerHTML=loadT().map((t,i)=>`<span class="ttag">${t}<button onclick="removeTaste(${i})">✕</button></span>`).join('');}
+function addTaste(){const v=document.getElementById('taste-input').value.trim();if(!v)return;const t=loadT();t.push(v);saveT(t);document.getElementById('taste-input').value='';renderTaste();}
 function removeTaste(i){const t=loadT();t.splice(i,1);saveT(t);renderTaste();}
 function toggleTaste(){const p=document.getElementById('taste-panel');p.classList.toggle('open');if(p.classList.contains('open'))renderTaste();}
 
@@ -333,11 +323,8 @@ function checkDup(){
   const w=document.getElementById('dup-warn');
   if(!person||!item){w.style.display='none';return;}
   const hits=ld(GK).filter(r=>r.person===person&&r.item.includes(item.slice(0,4)));
-  if(hits.length){
-    w.style.display='flex';
-    const name=[hits[0].company,hits[0].person].filter(Boolean).join(' ');
-    document.getElementById('dup-msg').textContent=`${name}さんには「${hits[0].item}」を${hits[0].date}に渡しています。同じものになっていないか確認してください。`;
-  }else{w.style.display='none';}
+  if(hits.length){w.style.display='flex';document.getElementById('dup-msg').textContent=`${[hits[0].company,hits[0].person].filter(Boolean).join(' ')}さんには「${hits[0].item}」を${hits[0].date}に渡しています。`;}
+  else{w.style.display='none';}
 }
 
 async function doSearch(){
@@ -347,199 +334,74 @@ async function doSearch(){
   const scenes=[...document.querySelectorAll('.chip.on')].map(c=>c.dataset.v).join('、');
   const taste=loadT();
   const parts=[];
-  if(area)parts.push('エリア: '+area);if(budget)parts.push('予算: '+budget);
-  if(genre)parts.push('ジャンル: '+genre);if(scenes)parts.push('シーン: '+scenes);
-  const prompt=`あなたはギフトに精通したセレクトショップのバイヤーです。以下の条件と好みに合ったお手土産を4件提案してください。
-【条件】${parts.length?parts.join(' / '):'こだわりなし'}
-【好み】${taste.join('、')}
-重要: 定番を避け、感度高めの最新トレンド・話題の新店・洗練されたパッケージのものを優先。
-JSON配列のみ返してください:
-[{"name":"商品名","shop":"店名","price":"価格帯","genre":"ジャンル","scene":"シーン","desc":"25字以内","why":"好みに合う理由20字以内"}]`;
+  if(area)parts.push('エリア: '+area);if(budget)parts.push('予算: '+budget);if(genre)parts.push('ジャンル: '+genre);if(scenes)parts.push('シーン: '+scenes);
+  const prompt=`あなたはギフトに精通したセレクトショップのバイヤーです。以下の条件と好みに合ったお手土産を4件提案してください。\n【条件】${parts.length?parts.join(' / '):'こだわりなし'}\n【好み】${taste.join('、')}\n重要: 定番を避け、感度高めの最新トレンド・話題の新店・洗練されたパッケージのものを優先。\nJSON配列のみ返してください:\n[{"name":"商品名","shop":"店名","price":"価格帯","genre":"ジャンル","scene":"シーン","desc":"25字以内","why":"好みに合う理由20字以内"}]`;
   sw('s');
   document.getElementById('results').innerHTML='<div class="rload"><div class="spin"></div><span>トレンドを検索中…</span></div>';
   try{
     const apiKey=localStorage.getItem('otomiyage_apikey')||'';
-    const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',
-      headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1200,tools:[{type:'web_search_20250305',name:'web_search'}],messages:[{role:'user',content:prompt}]})});
+    const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json','x-api-key':apiKey,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},body:JSON.stringify({model:'claude-sonnet-4-6',max_tokens:1200,tools:[{type:'web_search_20250305',name:'web_search'}],messages:[{role:'user',content:prompt}]})});
     const data=await res.json();
     let txt='';for(const b of data.content){if(b.type==='text'){txt=b.text;break;}}
-    let gifts=[];
-    try{const m=txt.replace(/```json|```/g,'').trim().match(/\[[\s\S]*\]/);if(m)gifts=JSON.parse(m[0]);}catch(e){}
+    let gifts=[];try{const m=txt.replace(/```json|```/g,'').trim().match(/\[[\s\S]*\]/);if(m)gifts=JSON.parse(m[0]);}catch(e){}
     if(!gifts.length){document.getElementById('results').innerHTML='<div class="empty-state"><i class="ti ti-mood-sad"></i><p>結果を取得できませんでした。</p></div>';return;}
     const favs=ld(FK);
     document.getElementById('results').innerHTML='<div class="rg">'+gifts.map(g=>{
-      const isFav=favs.some(f=>f.name===g.name);
-      const ns=g.name.replace(/'/g,"\\'");const ss=(g.shop||'').replace(/'/g,"\\'");
-      return`<div class="rc">
-        <div class="rct"><div class="rcn">${g.name}</div>
-        <button class="fb${isFav?' on':''}" onclick="toggleFav(this,'${ns}','${ss}')"><i class="ti ti-heart"></i></button></div>
-        <div class="rcs"><i class="ti ti-map-pin" style="font-size:11px;"></i> ${g.shop||''}</div>
-        <div class="rtags">${g.price?`<span class="rt price">${g.price}</span>`:''}${g.genre?`<span class="rt tr">${g.genre}</span>`:''}${g.scene?`<span class="rt">${g.scene}</span>`:''}</div>
-        <div class="rcd">${g.desc||''}</div>
-        ${g.why?`<div class="rcw"><i class="ti ti-sparkles" style="font-size:11px;margin-right:3px;"></i>${g.why}</div>`:''}
-        <div class="rcb">
-          <button class="mb" onclick="prefillGiven('${ns}')"><i class="ti ti-gift" style="font-size:12px;"></i>贈ったメモ</button>
-          <a class="sl" href="${gUrl(g.name,g.shop)}" target="_blank" rel="noopener"><i class="ti ti-external-link" style="font-size:12px;"></i>検索する</a>
-        </div>
-      </div>`;
+      const isFav=favs.some(f=>f.name===g.name);const ns=g.name.replace(/'/g,"\\'");const ss=(g.shop||'').replace(/'/g,"\\'");
+      return`<div class="rc"><div class="rct"><div class="rcn">${g.name}</div><button class="fb${isFav?' on':''}" onclick="toggleFav(this,'${ns}','${ss}')"><i class="ti ti-heart"></i></button></div><div class="rcs"><i class="ti ti-map-pin" style="font-size:11px;"></i> ${g.shop||''}</div><div class="rtags">${g.price?`<span class="rt price">${g.price}</span>`:''}${g.genre?`<span class="rt tr">${g.genre}</span>`:''}${g.scene?`<span class="rt">${g.scene}</span>`:''}</div><div class="rcd">${g.desc||''}</div>${g.why?`<div class="rcw"><i class="ti ti-sparkles" style="font-size:11px;margin-right:3px;"></i>${g.why}</div>`:''}<div class="rcb"><button class="mb" onclick="prefillGiven('${ns}')"><i class="ti ti-gift" style="font-size:12px;"></i>贈ったメモ</button><a class="sl" href="${gUrl(g.name,g.shop)}" target="_blank" rel="noopener"><i class="ti ti-external-link" style="font-size:12px;"></i>検索する</a></div></div>`;
     }).join('')+'</div>';
   }catch(e){document.getElementById('results').innerHTML='<div class="empty-state"><i class="ti ti-wifi-off"></i><p>エラーが発生しました。</p></div>';}
 }
 
-function toggleFav(btn,name,shop){
-  let f=ld(FK);const idx=f.findIndex(x=>x.name===name);
-  if(idx>=0){f.splice(idx,1);btn.classList.remove('on');}
-  else{f.unshift({name,shop,saved:today()});btn.classList.add('on');}
-  sv(FK,f);updateCounts();if(document.getElementById('panel-f').classList.contains('on'))renderFavs();
-}
-function renderFavs(){
-  const f=ld(FK);const el=document.getElementById('favlist');
-  if(!f.length){el.innerHTML='<div class="empty-state"><i class="ti ti-heart"></i><p>お気に入りはまだありません<br>検索結果のハートから追加できます</p></div>';return;}
-  el.innerHTML=f.map(x=>`<div class="favc">
-    <div class="favi"><i class="ti ti-gift"></i></div>
-    <div class="favinfo"><div class="favname">${x.name}</div><div class="favshop">${x.shop||''} · ${x.saved}</div></div>
-    <div class="favact">
-      <a class="favsrch" href="${gUrl(x.name,x.shop)}" target="_blank" rel="noopener"><i class="ti ti-external-link" style="font-size:12px;"></i>検索</a>
-      <button class="favdel" onclick="removeFav('${x.name.replace(/'/g,"\\'")}')"><i class="ti ti-trash"></i></button>
-    </div>
-  </div>`).join('');
-}
+function toggleFav(btn,name,shop){let f=ld(FK);const idx=f.findIndex(x=>x.name===name);if(idx>=0){f.splice(idx,1);btn.classList.remove('on');}else{f.unshift({name,shop,saved:today()});btn.classList.add('on');}sv(FK,f);updateCounts();if(document.getElementById('panel-f').classList.contains('on'))renderFavs();}
+function renderFavs(){const f=ld(FK);const el=document.getElementById('favlist');if(!f.length){el.innerHTML='<div class="empty-state"><i class="ti ti-heart"></i><p>お気に入りはまだありません</p></div>';return;}el.innerHTML=f.map(x=>`<div class="favc"><div class="favi"><i class="ti ti-gift"></i></div><div class="favinfo"><div class="favname">${x.name}</div><div class="favshop">${x.shop||''} · ${x.saved}</div></div><div class="favact"><a class="favsrch" href="${gUrl(x.name,x.shop)}" target="_blank" rel="noopener"><i class="ti ti-external-link" style="font-size:12px;"></i>検索</a><button class="favdel" onclick="removeFav('${x.name.replace(/'/g,"\\'")}')"><i class="ti ti-trash"></i></button></div></div>`).join('');}
 function removeFav(name){sv(FK,ld(FK).filter(f=>f.name!==name));updateCounts();renderFavs();}
 
-function prefillGiven(name){
-  sw('g');document.getElementById('g-item').value=name;
-  document.getElementById('g-date').value=today();
-  document.getElementById('cb-g').classList.add('open');document.getElementById('chv-g').classList.add('open');
-  document.getElementById('g-company').focus();
-}
+function prefillGiven(name){sw('g');document.getElementById('g-item').value=name;document.getElementById('g-date').value=today();document.getElementById('cb-g').classList.add('open');document.getElementById('chv-g').classList.add('open');document.getElementById('g-company').focus();}
 function addGiven(){
-  const company=document.getElementById('g-company').value.trim();
-  const person=document.getElementById('g-person').value.trim();
-  const date=document.getElementById('g-date').value;
-  const item=document.getElementById('g-item').value.trim();
-  const memo=document.getElementById('g-memo').value.trim();
-  if(!company&&!person){alert('会社名またはお名前を入力してください');return;}
-  if(!item){alert('品名を入力してください');return;}
-  const r=ld(GK);r.unshift({id:Date.now(),company,person,date:date||today(),item,memo});sv(GK,r);
-  ['g-company','g-person','g-item','g-memo'].forEach(id=>document.getElementById(id).value='');
-  document.getElementById('g-date').value='';document.getElementById('dup-warn').style.display='none';
-  renderGiven();
+  const company=document.getElementById('g-company').value.trim();const person=document.getElementById('g-person').value.trim();const date=document.getElementById('g-date').value;const price=document.getElementById('g-price').value.trim();const item=document.getElementById('g-item').value.trim();const url=document.getElementById('g-url').value.trim();const memo=document.getElementById('g-memo').value.trim();
+  if(!company&&!person){alert('会社名またはお名前を入力してください');return;}if(!item){alert('品名を入力してください');return;}
+  const r=ld(GK);r.unshift({id:Date.now(),company,person,date:date||today(),price,item,url,memo});sv(GK,r);
+  ['g-company','g-person','g-price','g-item','g-url','g-memo'].forEach(id=>document.getElementById(id).value='');document.getElementById('g-date').value='';document.getElementById('dup-warn').style.display='none';renderGiven();
 }
 function renderGiven(){
-  const q=(document.getElementById('gfs')?.value||'').toLowerCase();
-  const sort=document.getElementById('gfsort')?.value||'new';
-  let r=ld(GK);
-  if(q)r=r.filter(x=>(x.company||'').toLowerCase().includes(q)||(x.person||'').toLowerCase().includes(q)||x.item.toLowerCase().includes(q));
-  if(sort==='old')r.sort((a,b)=>a.date.localeCompare(b.date));
-  else if(sort==='person')r.sort((a,b)=>(a.person||'').localeCompare(b.person||'','ja'));
-  const all=ld(GK);
-  document.getElementById('sg-total').textContent=all.length;
-  document.getElementById('sg-people').textContent=new Set(all.map(x=>x.person||x.company)).size;
-  const dates=all.map(x=>x.date).filter(Boolean).sort((a,b)=>b.localeCompare(a));
-  document.getElementById('sg-recent').textContent=dates[0]?dates[0].slice(5).replace('-','/'):'—';
+  const q=(document.getElementById('gfs')?.value||'').toLowerCase();const sort=document.getElementById('gfsort')?.value||'new';
+  let r=ld(GK);if(q)r=r.filter(x=>(x.company||'').toLowerCase().includes(q)||(x.person||'').toLowerCase().includes(q)||x.item.toLowerCase().includes(q));
+  if(sort==='old')r.sort((a,b)=>a.date.localeCompare(b.date));else if(sort==='person')r.sort((a,b)=>(a.person||'').localeCompare(b.person||'','ja'));
+  const all=ld(GK);document.getElementById('sg-total').textContent=all.length;document.getElementById('sg-people').textContent=new Set(all.map(x=>x.person||x.company)).size;const dates=all.map(x=>x.date).filter(Boolean).sort((a,b)=>b.localeCompare(a));document.getElementById('sg-recent').textContent=dates[0]?dates[0].slice(5).replace('-','/'):'—';
   const list=document.getElementById('given-list');
   if(!r.length){list.innerHTML='<div class="empty-state"><i class="ti ti-gift"></i><p>'+(q?'該当なし':'まだ記録がありません')+'</p></div>';return;}
-  list.innerHTML=r.map(x=>`<div class="hc">
-    <div class="av">${(x.person||x.company||'?').slice(0,2)}</div>
-    <div class="hi">
-      <div class="hit">
-        ${x.person?`<span class="hn">${x.person}</span>`:''}
-        ${x.company?`<span class="hco">${x.company}</span>`:''}
-        <span class="hd">${x.date}</span>
-      </div>
-      <div class="hitem"><i class="ti ti-gift" style="font-size:12px;opacity:.4;"></i> ${x.item}</div>
-      ${x.memo?`<div class="hm">${x.memo}</div>`:''}
-    </div>
-    <button class="db" onclick="delGiven(${x.id})"><i class="ti ti-trash"></i></button>
-  </div>`).join('');
+  list.innerHTML=r.map(x=>`<div class="hc" onclick="openPopup('g',${x.id})"><div class="av">${(x.person||x.company||'?').slice(0,2)}</div><div class="hi"><div class="hit">${x.person?`<span class="hn">${x.person}</span>`:''} ${x.company?`<span class="hco">${x.company}</span>`:''}<span class="hd">${x.date}</span></div><div class="hitem"><i class="ti ti-gift" style="font-size:12px;opacity:.4;"></i> ${x.item}</div>${x.price?`<span class="hprice">${x.price}</span>`:''}${x.memo?`<div class="hm">${x.memo}</div>`:''}</div><i class="ti ti-chevron-right" style="font-size:14px;color:#999;opacity:.5;flex-shrink:0;align-self:center;"></i></div>`).join('');
 }
-function delGiven(id){sv(GK,ld(GK).filter(r=>r.id!==id));renderGiven();}
 
 function addReceived(){
-  const company=document.getElementById('r-company').value.trim();
-  const person=document.getElementById('r-person').value.trim();
-  const date=document.getElementById('r-date').value;
-  const item=document.getElementById('r-item').value.trim();
-  const memo=document.getElementById('r-memo').value.trim();
-  if(!company&&!person){alert('会社名またはお名前を入力してください');return;}
-  if(!item){alert('品名を入力してください');return;}
-  const r=ld(RK);r.unshift({id:Date.now(),company,person,date:date||today(),item,memo});sv(RK,r);
-  ['r-company','r-person','r-item','r-memo'].forEach(id=>document.getElementById(id).value='');
-  document.getElementById('r-date').value='';renderReceived();
+  const company=document.getElementById('r-company').value.trim();const person=document.getElementById('r-person').value.trim();const date=document.getElementById('r-date').value;const price=document.getElementById('r-price').value.trim();const item=document.getElementById('r-item').value.trim();const url=document.getElementById('r-url').value.trim();const memo=document.getElementById('r-memo').value.trim();
+  if(!company&&!person){alert('会社名またはお名前を入力してください');return;}if(!item){alert('品名を入力してください');return;}
+  const r=ld(RK);r.unshift({id:Date.now(),company,person,date:date||today(),price,item,url,memo});sv(RK,r);
+  ['r-company','r-person','r-price','r-item','r-url','r-memo'].forEach(id=>document.getElementById(id).value='');document.getElementById('r-date').value='';renderReceived();
 }
 function renderReceived(){
-  const q=(document.getElementById('rfs')?.value||'').toLowerCase();
-  const sort=document.getElementById('rfsort')?.value||'new';
-  let r=ld(RK);
-  if(q)r=r.filter(x=>(x.company||'').toLowerCase().includes(q)||(x.person||'').toLowerCase().includes(q)||x.item.toLowerCase().includes(q));
-  if(sort==='old')r.sort((a,b)=>a.date.localeCompare(b.date));
-  else if(sort==='person')r.sort((a,b)=>(a.person||'').localeCompare(b.person||'','ja'));
+  const q=(document.getElementById('rfs')?.value||'').toLowerCase();const sort=document.getElementById('rfsort')?.value||'new';
+  let r=ld(RK);if(q)r=r.filter(x=>(x.company||'').toLowerCase().includes(q)||(x.person||'').toLowerCase().includes(q)||x.item.toLowerCase().includes(q));
+  if(sort==='old')r.sort((a,b)=>a.date.localeCompare(b.date));else if(sort==='person')r.sort((a,b)=>(a.person||'').localeCompare(b.person||'','ja'));
   const list=document.getElementById('recv-list');
   if(!r.length){list.innerHTML='<div class="empty-state"><i class="ti ti-inbox"></i><p>'+(q?'該当なし':'まだ記録がありません')+'</p></div>';return;}
-  list.innerHTML=r.map(x=>`<div class="hc">
-    <div class="av recv">${(x.person||x.company||'?').slice(0,2)}</div>
-    <div class="hi">
-      <div class="hit">
-        ${x.person?`<span class="hn">${x.person}</span>`:''}
-        ${x.company?`<span class="hco">${x.company}</span>`:''}
-        <span class="hd">${x.date}</span>
-      </div>
-      <div class="hitem"><i class="ti ti-inbox" style="font-size:12px;opacity:.4;"></i> ${x.item}</div>
-      ${x.memo?`<div class="hm">${x.memo}</div>`:''}
-    </div>
-    <button class="db" onclick="delRecv(${x.id})"><i class="ti ti-trash"></i></button>
-  </div>`).join('');
+  list.innerHTML=r.map(x=>`<div class="hc" onclick="openPopup('r',${x.id})"><div class="av recv">${(x.person||x.company||'?').slice(0,2)}</div><div class="hi"><div class="hit">${x.person?`<span class="hn">${x.person}</span>`:''} ${x.company?`<span class="hco">${x.company}</span>`:''}<span class="hd">${x.date}</span></div><div class="hitem"><i class="ti ti-inbox" style="font-size:12px;opacity:.4;"></i> ${x.item}</div>${x.price?`<span class="hprice">${x.price}</span>`:''}${x.memo?`<div class="hm">${x.memo}</div>`:''}</div><i class="ti ti-chevron-right" style="font-size:14px;color:#999;opacity:.5;flex-shrink:0;align-self:center;"></i></div>`).join('');
 }
-function delRecv(id){sv(RK,ld(RK).filter(r=>r.id!==id));renderReceived();}
 
-function addNext(){
-  const person=document.getElementById('n-person').value.trim();
-  const item=document.getElementById('n-item').value.trim();
-  if(!person||!item){alert('相手と品名を入力してください');return;}
-  const r=ld(NK);r.unshift({id:Date.now(),person,item});sv(NK,r);
-  document.getElementById('n-person').value='';document.getElementById('n-item').value='';
-  updateCounts();renderNext();
-}
-function doneNext(id){
-  const item=ld(NK).find(r=>r.id===id);
-  if(item){sv(NK,ld(NK).filter(r=>r.id!==id));prefillGiven(item.item);document.getElementById('g-person').value=item.person;}
-  updateCounts();renderNext();
-}
+function addNext(){const person=document.getElementById('n-person').value.trim();const item=document.getElementById('n-item').value.trim();if(!person||!item){alert('相手と品名を入力してください');return;}const r=ld(NK);r.unshift({id:Date.now(),person,item});sv(NK,r);document.getElementById('n-person').value='';document.getElementById('n-item').value='';updateCounts();renderNext();}
+function doneNext(id){const item=ld(NK).find(r=>r.id===id);if(item){sv(NK,ld(NK).filter(r=>r.id!==id));prefillGiven(item.item);document.getElementById('g-person').value=item.person;}updateCounts();renderNext();}
 function delNext(id){sv(NK,ld(NK).filter(r=>r.id!==id));updateCounts();renderNext();}
 function renderNext(){
   const r=ld(NK);const list=document.getElementById('next-list');
   if(!r.length){list.innerHTML='<div class="empty-state"><i class="ti ti-bookmark"></i><p>次に渡したい候補を追加しましょう<br>「渡した！」を押すと贈ったメモに転記されます</p></div>';return;}
-  list.innerHTML=r.map(x=>`<div class="nc">
-    <div class="nci">${x.person.slice(0,2)}</div>
-    <div class="ncinfo"><div class="ncperson">${x.person}</div>
-    <div class="ncitem"><i class="ti ti-arrow-right" style="font-size:12px;opacity:.5;"></i> ${x.item}</div></div>
-    <div class="ncact">
-      <button class="ncdone" onclick="doneNext(${x.id})">渡した！</button>
-      <button class="ncdel" onclick="delNext(${x.id})"><i class="ti ti-trash"></i></button>
-    </div>
-  </div>`).join('');
+  list.innerHTML=r.map(x=>`<div class="nc"><div class="nci">${x.person.slice(0,2)}</div><div class="ncinfo"><div class="ncperson">${x.person}</div><div class="ncitem"><i class="ti ti-arrow-right" style="font-size:12px;opacity:.5;"></i> ${x.item}</div></div><div class="ncact"><button class="ncdone" onclick="doneNext(${x.id})">渡した！</button><button class="ncdel" onclick="delNext(${x.id})"><i class="ti ti-trash"></i></button></div></div>`).join('');
 }
-function updateCounts(){
-  document.getElementById('fav-cnt').textContent=ld(FK).length;
-  document.getElementById('next-cnt').textContent=ld(NK).length;
-}
-function sw(t){
-  ['s','f','g','r','n'].forEach(id=>{
-    document.getElementById('panel-'+id).classList.toggle('on',id===t);
-    document.getElementById('tab-'+id).classList.toggle('on',id===t);
-  });
-  if(t==='f')renderFavs();if(t==='g')renderGiven();
-  if(t==='r')renderReceived();if(t==='n')renderNext();
-}
-function toggleCard(id){
-  document.getElementById('cb-'+id).classList.toggle('open');
-  document.getElementById('chv-'+id).classList.toggle('open');
-}
-document.getElementById('g-date').value=today();
-document.getElementById('r-date').value=today();
-updateCounts();renderGiven();
-checkApiKey();
+function updateCounts(){document.getElementById('fav-cnt').textContent=ld(FK).length;document.getElementById('next-cnt').textContent=ld(NK).length;}
+function sw(t){['s','f','g','r','n'].forEach(id=>{document.getElementById('panel-'+id).classList.toggle('on',id===t);document.getElementById('tab-'+id).classList.toggle('on',id===t);});if(t==='f')renderFavs();if(t==='g')renderGiven();if(t==='r')renderReceived();if(t==='n')renderNext();}
+function toggleCard(id){document.getElementById('cb-'+id).classList.toggle('open');document.getElementById('chv-'+id).classList.toggle('open');}
+document.getElementById('g-date').value=today();document.getElementById('r-date').value=today();
+updateCounts();renderGiven();checkApiKey();
 </script>
 </body>
 </html>
